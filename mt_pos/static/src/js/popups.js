@@ -239,7 +239,7 @@ var PasswordPopupWidget = NumberPopupWidget.extend({
         this.$('.popup').addClass('popup-password');
     },
 });
-gui.define_popup({name:'password', widget: PasswordPopupWidget});
+gui.define_popup({name:'password', widget: PasswordPopupWidget, input:text, input:password});
 
 var HideCancelButtonWidget = NumberPopupWidget.extend({
     renderElement: function(){
