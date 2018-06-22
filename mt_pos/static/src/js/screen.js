@@ -53,7 +53,7 @@ screens.NumpadWidget.include({
 	var self = this;
 	this._super();
 	var mode = this.state.get('mode');
-	if (mode === 'discount'){
+	if (mode === 'discount'||mode === 'price'){
 	    this.gui.show_popup('password',{
 		'title': _t('Fill Password'),
 		'confirm': function(val) {
